@@ -1,0 +1,79 @@
+#replica-fleet {
+  padding: 20px;
+}
+
+#replica-fleet > * + * {
+  margin-top: 20px;
+}
+
+.replica,
+.replica-squares {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top:6px;
+}
+
+.replica {
+  width: 150px;
+  height: 35px;
+  text-align:center;
+  background-color:rgb(113, 143, 148);
+  box-shadow: rgb(165, 191, 196) 2px 2px;
+  border-radius:50px;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0.2);
+  
+}
+
+.replica:hover {
+  background-color:rgb(84, 116, 184);
+  opacity: 0.9;
+}
+
+.replica:active {
+  position: relative;
+  top: 1px;
+}
+
+.placing {
+  background-color: rgb(113, 143, 148);
+}
+
+.placing:hover {
+  background-color: rgb(113, 143, 148);
+}
+
+/* Nazwa statku */
+
+.replica-title {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-left:7px;
+}
+
+.small-square {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(207, 207, 207);
+  background-color: rgb(16, 35, 214);
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 5px;
+}
+
+
+.player-title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: underline;
+}

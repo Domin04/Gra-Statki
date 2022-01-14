@@ -1,0 +1,130 @@
+
+@import './board.css';
+@import './replicas.css';
+
+body {
+  background-image: url("../img/tlo.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 800px;
+  box-sizing: border-box;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main,
+section {
+  text-align: center;
+}
+
+main {
+  max-width: 35em;
+  background-color:rgb(99, 115, 133);
+  border-radius:30px;
+  border-top:50px;
+}
+
+#game-screen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(99, 115, 133);
+  background-size: cover;
+  border-radius: 50px;
+}
+
+
+/* Box zawierający statki  */
+#available-ships,
+#player-tips {
+  width: 200px;
+  max-height: 500px;
+  text-align: center;
+  align-self: center;
+  flex-direction: column;
+
+}
+
+.welcome-screen-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-decoration:underline;
+}
+
+.player-tip,
+#firing-info {
+  color: rgb(0, 0, 0);
+}
+
+.restart {
+  cursor: pointer;
+  font-size: 12px;
+  background-color:rgb(113, 143, 148);
+  box-shadow: rgb(165, 191, 196) 2px 2px;
+  border-radius:50px;
+}
+.restart:hover {
+  background-color:rgb(84, 116, 184);
+  opacity: 0.9;
+}
+#game-over {
+  font-size: 30px;
+}
+
+/* Nagłówek */
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(15, 15, 15);
+  font-size: 38px;
+}
+
+.subtitle {
+  font-size: 28px;
+  color: rgb(19, 19, 19);
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+/* Zwykły tekst użyty w podtytule i wskazówkach */
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Przyciski */
+
+button {
+  width: 170px;
+  height: 50px;
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  margin:20px;
+  border-radius: 5px;
+  background-color: rgb(92, 92, 92);
+  color: rgb(0, 0, 0);
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
