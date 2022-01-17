@@ -50,6 +50,7 @@ export const Game = () => {
   const [computerShips, setComputerShips] = useState([]);
   const [hitsByPlayer, setHitsByPlayer] = useState([]);
   const [hitsByComputer, setHitsByComputer] = useState([]);
+  
 
   // *** GRACZ ***
   const selectShip = (shipName) => {
